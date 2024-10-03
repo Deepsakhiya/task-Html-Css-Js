@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <style>
+        body {
+            background-color: #483D8B;
+            height: 100dvh;
+            width: 100dvw;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #D3D3D3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        nav h2 {
+            color: #483D8B;
+        }
+        .part2 .item {
+            color: #483D8B;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .part2 {
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="part1">
+            <h2>IMG</h2>
+        </div>
+        <div class="part2">
+            <p class="item">item</p>
+            <p class="item">item</p>
+            <p class="item">item</p>
+            <p class="item">item</p>
+        </div>
+    </nav>
+  </body>
+</html>

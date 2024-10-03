@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <style>
+      body {
+        background-color: yellowgreen;
+        height: 100dvh;
+        width: 100dvw;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        background-color: #ffea00;
+        padding: 20px;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .item1, .item2, .item3, .item4 {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+      }
+      .item1:hover, .item2:hover, .item3:hover, .item4:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+      <div class="item4">item4</div>
+    </nav>
+  </body>
+</html>

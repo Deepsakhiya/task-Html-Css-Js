@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <style>
+      body {
+        background-color: crimson;
+        height: 100dvh;
+        width: 100dvw;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 300px;
+        justify-content: center;
+        align-content: center;
+      }
+      .card {
+        background-color: #ffe4c4;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .part1 {
+        height: 50%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .part2 {
+        height: 50%;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+      }
+      button {
+        width: 100%;
+        background-color: #ff00ff;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="part1">
+        <img
+          src="https://images.pexels.com/photos/18937872/pexels-photo-18937872/free-photo-of-residential-building-in-city.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Placeholder 6"
+        />
+      </div>
+      <div class="part2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi
+          adipisci delectus, voluptatibus fugiat libero?
+        </p>
+        <button>Card</button>
+      </div>
+    </div>
+  </body>
+</html>
